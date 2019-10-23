@@ -14,7 +14,7 @@ jobs:
           when: always
           command: |
               echo 'blah blah blah'
-              cal 9 1752
+              echo 'YAY go Content'
       - checkout
       - setup_remote_docker
       - run:
