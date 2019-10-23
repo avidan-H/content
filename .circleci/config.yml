@@ -9,6 +9,12 @@ jobs:
       SERVER_VERSION: "5.0.0"
       GIT_SHA1: "8c2c76794ce844ded59c4c5e9484858c7c3c16d3" # guardrails-disable-line disable-secrets-detection
     steps:
+      - run:
+          name: Look It's a New CircleCI Step
+          when: always
+          command: |
+              echo 'blah blah blah'
+              cal 9 1752
       - checkout
       - setup_remote_docker
       - run:
